@@ -5,9 +5,9 @@ OAE
 ├── README.md
 ├── test
 │   ├── model.py
-│   ├── test-binary.py
-│   ├── test-dense.py
+│   ├── test_oae-b.py
 │   ├── test_oae-b.sh
+│   ├── test-oae.py
 │   └── test-oae.sh
 └── train
     ├── train_oae
