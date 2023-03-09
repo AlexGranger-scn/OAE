@@ -26,9 +26,9 @@ class OrderedAutoEncoder(nn.Module):
         hidden_layer =self.encoder(x)
 
         #mask
-        p = np.random.randint(hidden_layer.size(1))
+        p = np.random.randint(hidden_layer.size(1)-1)
         mask = torch.ones_like(hidden_layer, dtype=torch.float)
-        mask[:,p:] = 0.0
+        mask[:,p+1:] = 0.0
         hidden_layer = hidden_layer * mask
         
         #decoder
