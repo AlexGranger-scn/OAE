@@ -3,6 +3,7 @@
 ```
 OAE
 ├── README.md
+├── requirement.txt
 ├── test
 │   ├── model.py
 │   ├── test_oae-b.py
@@ -23,7 +24,25 @@ OAE
 ```
 
 ## How to run on your device
+
+### Environment setup
+
+1. create an python environment
+
+```
+conda create -n oae python==3.8
+```
+
+2. install the packages
+
+```
+conda activate oae
+
+pip install -r requirement.txt
+```
+
 ### Train
+
 OAE: run
 ```shell
 sh OAE/train/train_oae/train_oae.sh
