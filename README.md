@@ -51,3 +51,20 @@ OAE-b: run
 ```shell
 sh OAE/train/train_oae-b/train_oae-b.sh
 ```
+
+### Test
+
+OAE: test
+
+```shell
+sh OAE/test/test_oae.shh
+```
+
+OAE-b: run
+
+```shell
+sh OAE/test/test_oae-b.sh
+```
+
+### 
+
